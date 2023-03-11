@@ -3,11 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    
 }
 
 body {
     font-size: 100%;
     background-color: rgb(255, 255, 255);
+    text-shadow: grey;
 }
 
 .cabecalho {
@@ -15,16 +17,18 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 24px;
+    padding-top: 0ch;
 }
 
 .cabecalho-imagem {
-    height: 82px;
+    height: 190px;
+           
 }
 
 .cabecalho-menu {
     display: flex;
-    gap: 50px;
+    gap: 70px;
+    
 }
 
 .cabecalho-menu-itens {
@@ -43,7 +47,10 @@ body {
     align-items: center;
     justify-content: space-around;
     padding: 24px;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(206, 200, 200), rgb(134, 131, 131), rgb(216, 212, 212));
+    
 }
+
 
 .logotipo-principal {
     height: 550px;
@@ -59,7 +66,8 @@ body {
     font-family: "rightroous" cursive;
     font-weight: 1000;
     font-size: 60px;
-    color: black;
+    color: rgb(19, 18, 18);
+    text-shadow: 1px 1px 1px rgb(70, 68, 68);
 }
 
 .conteudo-subtitulo {
@@ -67,13 +75,15 @@ body {
     font-weight: 800;
     font-size: 34px;
     color: black;
+    text-shadow: 1px 1px 1px rgb(70, 68, 68);
 }
 
 .conteudo-texto {
-    font-family: "rightroous" cursive;
+    font-family:Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: black;
+    text-align: justify;
 }
 
 .botao-linkedin {
@@ -87,6 +97,7 @@ body {
     font-weight: 300;
     font-size: 18px;
     color: white;
+    text-shadow: 1px 0px 0px rgb(70, 68, 68);
     
 }
 
@@ -95,14 +106,29 @@ nav > a:hover {
             color: black;
         }
 
-.conteudo-sobre-min {
+.titulo-sobre-mim {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    font-size: 22px;
+    font-size: 30px;
+    justify-content: space-around;
+    padding-top: 1cm;
+    padding: 10px;
+    margin: 5px;
 }
 
 .conteudo-texto-sobremin {
-    font-family: "rightroous" cursive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: space-around;
+    padding-top: 1cm;
+    margin: 15px;
+    border-top: 0.2px solid black;
+    text-align: justify;
+}
+
+.conteudo-texto-sobremin {
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     font-size: 24px;
     color: black;
@@ -113,7 +139,8 @@ nav > a:hover {
 
 .rodape {
     padding: 32px;
-    border-top: 0.4px solid black;
+    border-top: 0.2px solid black;
+    background-image: linear-gradient(rgb(148, 144, 144), rgb(206, 200, 200), rgb(134, 131, 131), rgb(216, 212, 212));
 }
 
 .conteudo-rodape {
@@ -122,9 +149,151 @@ nav > a:hover {
     text-align: center;
     padding: 10px;
     margin: 0px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .botao-linkedin:hover {
     background-color: grey;
+    text-shadow: 1px 0px 0px rgb(70, 68, 68);
+}
+
+.titulo-habilidades {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 5px;
+}
+
+.conteudo-texto-habilidades {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    border-top: 0.2px solid black;
+    text-align: justify;
+}
+
+.titulo-projectos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 5px;
+}
+
+.conteudo-projectos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    border-top: 0.2px solid black;
+    text-align: justify;
+}
+
+.conteudo-texto-habilidades {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    border-top: 0.2px solid rgb(255, 255, 255);
+    text-align: justify;
+}
+
+.conteudo-texto-habilidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.logotipo-habilidades {
+    display: flex;
+    flex-direction:flex-grow;
+    align-items: right;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    padding: 14px;
+    size: 14cm;
+}
+
+.botao-projectos {
+    box-shadow: black;
+    border-radius: 30px;
+    background-color: rgb(71, 49, 49);
+    width: 280px;
+    height: 250px;
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 35px;
+    text-align: center;
+    text-decoration-style: dashed;
+}
+
+.botao-voltar-projectos {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    text-align: inherit;
+}
+
+.botao-voltar-habilidades {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    text-align: justify;
+}
+
+.botao-voltar-sobre {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 60;
+    font-size: 22px;
+    padding-top: 1cm;
+    margin: 15px;
+    text-align: justify;
+}
+
+.botao-projectos:hover {
+    background-color: rgb(192, 150, 150);
+    text-shadow: 1px 1px 1px rgb(39, 33, 33);
+}
+
+.texto-brevemente:hover {
+   text-transform: uppercase; 
+}
+
+.botao-voltar-sobre:hover {
+   text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.botao-voltar-habilidades:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.botao-voltar-projectos:hover {
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.paragrago-vazio {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    justify-content: space-around;
+    padding-top: 1cm;
+    margin: 15px;
+    border-top: 0.2px solid black;
+    text-align: justify;
 }
